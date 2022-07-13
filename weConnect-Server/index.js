@@ -1,5 +1,5 @@
 // Node server which will handle socker io connections
-
+const port = process.env.PORT || 8000;
 const io = require("socket.io")(8000);
 
 const users = {};
@@ -7,7 +7,7 @@ const users = {};
 io.on("connection", (socket) => {
   // IF any new user joins , lets other users connected to the server know
   socket.on("new-user-joined", (name) => {
-   // console.log("New user ", names);
+    // console.log("New user ", names);
     users[socket.id] = name;
     socket.broadcast.emit("user-joined", name);
   });
@@ -22,5 +22,4 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("left", users[socket.id]);
     delete users[socket.id];
   });
-
 });
