@@ -1,0 +1,15 @@
+{
+  "name": "weconnect-server",
+  "version": "1.0.0",
+  "description": "This is the node server for the weConnect char Application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sachin",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1"
+  }
+}

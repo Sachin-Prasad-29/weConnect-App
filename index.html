@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+
+    <link rel="stylesheet" href="external/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="external/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-color">
+      <nav class="navbar container navbar-light bg-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/resources/weConnectlogonew.png"
+              alt=""
+              width="40"
+              height="40"
+              class="d-inline-block align-text-top"
+            />
+            <div class="fw-bold logoName">weConnect <i class="fa-regular fa-paper-plane"></i></div>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container message-box">
+      <div class="message left">
+        <p>Sachin:</p>
+        Hi thsi sis somee tijperot messabg to shar with you all
+      </div>
+      <div class="message right">
+        <p>Sammer:</p>
+        Hello
+      </div>
+    </div>
+
+    <div class="container send-container">
+      <form action="#" id="send-form">
+        <div class="input-group mb-3">
+          <input
+            id="messageInput"
+            type="text"
+            class="form-control"
+            placeholder="Message"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-success" type="submit" id="button-addon2">
+            Send <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

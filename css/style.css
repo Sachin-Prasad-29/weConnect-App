@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: radial-gradient(rgb(223, 232, 233), rgba(191, 224, 241, 0.804));
+}
+
+.bg-color {
+  background-color: #181d2f;
+}
+.logoName {
+  display: inline;
+  position: absolute;
+  top: 17px;
+  left: 70px;
+  color: #90b1d6;
+  font-family: "Kaushan Script", cursive;
+}
+
+.message {
+  border: 2px solid gray;
+  margin: 15px 4px;
+  padding: 8px;
+  width: 35%;
+  background-color: rgb(179, 229, 229);
+}
+.left {
+  float: left;
+  clear: both;
+  border-radius: 0px 15px 15px 15px;
+}
+.right {
+  float: right;
+  clear: both;
+  border-radius: 15px 0px 15px 15px;
+}
+.center {
+  color: gray;
+  border: none;
+  width: auto;
+  float: left;
+  clear: both;
+  margin-left: 35%;
+  border-radius: 15px;
+}
+p {
+  margin: 0px;
+  font-weight: 600;
+  color: black;
+}
+.message-box {
+  border: 1px solid gray;
+  background-color: lightsteelblue;
+  border-bottom: none;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 30px;
+}
+.send-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+#messageInput {
+  width: 84.61%;
+  padding: 8px;
+  border: 0.5px solid gray;
+  border-radius: 0 0 0 10px;
+}
+.btn {
+  width: 15%;
+  padding: 8px;
+  border: 0.7px solid #181d2f;
+  border-radius: 0 0 10px 0;
+  background-color: #181d2f;
+  color: #90b1d6;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #90b1d6;
+  color: #181d2f;
+  border: 1px solid #90b1d6;
+}
