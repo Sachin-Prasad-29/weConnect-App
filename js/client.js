@@ -6,7 +6,7 @@ const form = document.getElementById("send-form");
 const messageInput = document.getElementById("messageInput");
 const messageContainer = document.querySelector(".message-box");
 //tone which will fire on chat
-let audio = new Audio("/resources/ting.mp3");
+let audio = new Audio("./resources/ting.mp3");
 
 // Function which will append event info to the container
 const append = (message, position) => {
