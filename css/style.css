@@ -60,7 +60,7 @@ p {
   border: 1px solid gray;
   background-color: lightsteelblue;
   border-bottom: none;
-  height: 80vh;
+  height: 70vh;
   overflow-y: scroll;
   padding: 30px;
 }
